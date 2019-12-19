@@ -72,7 +72,7 @@
 	}
 ?>
     </table>
-	    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8929376252577!2d74.4681913143442!3d16.682240127149857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc0e26e0a8944ed%3A0x2abc23be634e333f!2sDKTE%20Society&#39;s%20Textile%20%26%20Engineering%20Institute%20(An%20Autonomous%20Institute)!5e0!3m2!1sen!2sin!4v1576069262190!5m2!1sen!2sin" width="400" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
+	    <p><iframe src="https://www.google.com/maps/d/embed?mid=1Ux9GNsi07yRamET1FWRaeZ0S8pyheS8X" width="640" height="480"></iframe></p>
 
     </body>
 </html>
