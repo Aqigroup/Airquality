@@ -7,9 +7,33 @@
 <head>
 	<title>Air Quality Index</title>
 	<style type="text/css">
-        .table_titles, .table_cells_odd, .table_cells_even {
-                padding-right: 20px;
-                padding-left: 20px;
+		* {
+    box-sizing: border-box;}
+	
+	.PG {
+    --gn: auto;
+    --gg: 2vh;
+    --gc: 1;
+    --gr: 1;
+    --go: 0;
+    display: grid;
+    gap: var(--gg,0)
+}
+
+@media (min-width:640px) {
+    .PG {
+        grid-template-columns: repeat(var(--gn,1),1fr)
+    }
+
+    .PG>* {
+        grid-column: auto/span var(--gc,auto);
+        grid-row: auto/span var(--gr,auto);
+        order: var(--go,0);
+        min-width: 0
+    }
+ }
+			
+       .table_titles, .table_cells_odd, .table_cells_even {
                 color: #000;
         }
         .table_titles {
@@ -24,13 +48,21 @@
         }
         table {
             border: 2px solid #333;
+			margin-top: 2vh;
+			text-align: center;
         }
-        body { font-family: "Trebuchet MS", Arial; }
+        body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif; }
     </style>
 </head>
 
     <body>
-        <h1>Air Quality Index</h1>
+        <h1style="text-transform: uppercase;font-size: x-large;text-align: center;letter-spacing: 2px;">Air Quality Index</h1>
+	    <div class="PG" style="--gn: 5;">
+		<div style="--gc: 3;">
+	    <p><iframe src="https://www.google.com/maps/d/embed?mid=1Ux9GNsi07yRamET1FWRaeZ0S8pyheS8X" width="100%" height="500px"></iframe></p>
+        </div>
+		
+		<div style="--gc: 2;">
     <table border="0" cellspacing="0" cellpadding="4">
       <tr>
             <td class="table_titles">ID</td>
@@ -72,7 +104,6 @@
 	}
 ?>
     </table>
-	    <p><iframe src="https://www.google.com/maps/d/embed?mid=1Ux9GNsi07yRamET1FWRaeZ0S8pyheS8X" width="640" height="480"></iframe></p>
-
+</div>
     </body>
 </html>
