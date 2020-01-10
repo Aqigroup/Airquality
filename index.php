@@ -56,7 +56,7 @@
 </head>
 
     <body>
-        <h1style="text-transform: uppercase;font-size: x-large;text-align: center;letter-spacing: 2px;">Air Quality Index</h1>
+        <h1 style="text-transform: uppercase;font-size: x-large;text-align: center;letter-spacing: 2px;">Air Quality Index</h1>
 	    <div class="PG" style="--gn: 5;">
 		<div style="--gc: 3;">
 	    <p><iframe src="https://www.google.com/maps/d/embed?mid=1Ux9GNsi07yRamET1FWRaeZ0S8pyheS8X" width="100%" height="500px"></iframe></p>
@@ -68,7 +68,7 @@
             <td class="table_titles">ID</td>
             <td class="table_titles">Latitude</td>
             <td class="table_titles">Longitude</td>
-            <td class="table_titles">AQI in ppm</td>
+            <td class="table_titles">AQI</td>
           </tr>
 <?php
 	// Retrieve all records and display them
