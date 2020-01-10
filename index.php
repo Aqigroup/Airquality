@@ -63,7 +63,7 @@
         </div>
 		
 		<div style="--gc: 2;">
-    <table border="0" cellspacing="0" cellpadding="4">
+    <table border="0" cellspacing="0" cellpadding="4" width="100%">
       <tr>
             <td class="table_titles">ID</td>
             <td class="table_titles">Latitude</td>
