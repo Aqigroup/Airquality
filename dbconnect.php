@@ -1,9 +1,9 @@
 <?php
 
-define('DB_USER', 'axAb8zWqMq');
-define('DB_PASSWORD', 'VDd3l7XHuC');
-define('DB_HOST', 'remotemysql.com');
-define('DB_NAME', 'axAb8zWqMq');
+define('DB_USER', 'aqigroup');
+define('DB_PASSWORD', 'aqi4@heroku');
+define('DB_HOST', 'www.db4free.net');
+define('DB_NAME', 'aqigroup');
 
 $dbc = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die('Could not connect to MySQL: ' . mysqli_connect_error() );
 
