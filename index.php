@@ -73,7 +73,7 @@
 <?php
 	// Retrieve all records and display them
     
-    $q = "SELECT * FROM aqi ORDER BY id ASC";
+    $q = "SELECT * FROM 'Air Quality Index' ORDER BY id ASC";
    
     $result = @mysqli_query($dbc, $q); 
     
