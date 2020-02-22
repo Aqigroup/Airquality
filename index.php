@@ -73,7 +73,7 @@
 <?php
 	// Retrieve all records and display them
     
-    $q = "SELECT * FROM 'Air Quality Index' WHERE 1";
+    $q = "SELECT `id`, `lat`, `lgt`, `aqi` FROM `Air Quality Index` WHERE 1";
    
     $result = @mysqli_query($dbc, $q); 
     
