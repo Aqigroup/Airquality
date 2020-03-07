@@ -34,6 +34,7 @@
 
     <body>
         <h1 style="text-transform: uppercase;font-size: x-large;text-align: center;letter-spacing: 2px;">Air Quality Index</h1>
+	    <h1 style="text-transform: uppercase;font-size: large;letter-spacing: 2px;">geographical location of stations</h1>
 	    <div>
 		<div >
 	    <p><iframe src="https://www.google.com/maps/d/embed?mid=1Ux9GNsi07yRamET1FWRaeZ0S8pyheS8X" width="100%" height="500px"></iframe></p>
