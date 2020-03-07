@@ -40,7 +40,7 @@
         </div>
 		
 		<div>
-    <table border="0" cellspacing="0" cellpadding="4" width="50%">
+    <table border="0" cellspacing="0" cellpadding="4" width="100%">
       <tr>
             <td class="table_titles">ID</td>
             <td class="table_titles">Latitude</td>
@@ -83,48 +83,5 @@
     </table>
 </div>
 		    
-		    <div >
-    <table border="0" cellspacing="0" cellpadding="4" width="50%">
-      <tr>
-            <td class="table_titles">ID</td>
-            <td class="table_titles">Latitude</td>
-            <td class="table_titles">Longitude</td>
-            <td class="table_titles">AQI</td>
-          </tr>
-<?php
-	// Retrieve all records and display them
-    
-    $q = "SELECT `id`, `lat`, `lgt`, `aqi` FROM `Air Quality Index` WHERE 1";
-   
-    $result = @mysqli_query($dbc, $q); 
-    
-	
-	// Used for row color toggle
-	$oddrow = true;
-	
-	// process every record
-	while( $row = mysqli_fetch_array($result) )
-	{
-		if ($oddrow) 
-		{ 
-			$css_class=' class="table_cells_odd"'; 
-		}
-		else
-		{ 
-			$css_class=' class="table_cells_even"'; 
-		}
-		
-		$oddrow = !$oddrow;
-		
-		echo '<tr>';
-		echo '   <td'.$css_class.'>'.$row["id"].'</td>';
-		echo '   <td'.$css_class.'>'.$row["lat"].'</td>';
-		echo '   <td'.$css_class.'>'.$row["lgt"].'</td>';
-		echo '   <td'.$css_class.'>'.$row["aqi"].'</td>';
-		echo '</tr>';
-	}
-?>
-    </table>
-</div>
     </body>
 </html>
