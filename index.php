@@ -18,10 +18,10 @@
           background-color: #b035e8;
         }
         .table_cells_odd {
-            background-color: rgba(170, 0, 247, 0.39);
+             background-color: #FAFAFA;		
         }
         .table_cells_even {
-            background-color: #FAFAFA;
+		background-color: rgba(170, 0, 247, 0.39);
         }
         table {
             border: 2px solid #333;
