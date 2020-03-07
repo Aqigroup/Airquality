@@ -3,12 +3,17 @@
 require('dbconnect.php');
  // Make the query:
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-$id  = $_GET['id'];
-$lat = $_GET['lat'];
-$lgt = $_GET['lgt'];
-$aqi = $_GET['aqi'];
+$id  = $_GET['ID'];
+$station = $_GET['STATION'];
+$co = $_GET['CO'];
+$pm2_5 = $_GET['PM2_5'];
+$o3 = $_GET['O3'];
+$nh3 = $_GET['NH3'];
+$humidity = $_GET['HUMIDITY'];
+$temp = $_GET['TEMP']; 
+$aqi = $_GET['AQI']; 
 
-$q = "INSERT INTO `Air Quality Index` (`id`, `lat`, `lgt`, `aqi`) VALUES ('$id', '$lat', '$lgt', '$aqi')";
+$q = "INSERT INTO `AQI` (`ID`, `STATION`, `CO`, `PM2_5`, `O3`, `NH3`, `HUMIDITY`, `TEMP`, `AQI`) VALUES ('$id', '$station', '$co', '$pm2_5', '$o3', '$nh3', '$humidity', '$temp', '$aqi')";
 
 $r = @mysqli_query($dbc, $q); // Run the query.
 
