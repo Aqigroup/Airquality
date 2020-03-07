@@ -43,14 +43,19 @@
     <table border="0" cellspacing="0" cellpadding="4" width="100%">
       <tr>
             <td class="table_titles">ID</td>
-            <td class="table_titles">Latitude</td>
-            <td class="table_titles">Longitude</td>
-            <td class="table_titles">AQI</td>
+            <td class="table_titles">STATION</td>
+            <td class="table_titles">CARBON MONOXIDE</td>
+            <td class="table_titles">PARTICULATE MATTER (PM2.5)</td>
+	    <td class="table_titles">OZONE</td> 
+	    <td class="table_titles">AMMONIA</td> 
+	    <td class="table_titles">HUMIDITY</td>
+	    <td class="table_titles">TEMPARATURE</td>
+	    <td class="table_titles">AQI</td>  
           </tr>
 <?php
 	// Retrieve all records and display them
     
-    $q = "SELECT `id`, `lat`, `lgt`, `aqi` FROM `Air Quality Index` WHERE 1";
+    $q = "SELECT `ID`, `STATION`, `CO`, `PM2_5`, `O3`, `NH3`, `HUMIDITY`, `TEMP`, `AQI` FROM `AQI` WHERE 1";
    
     $result = @mysqli_query($dbc, $q); 
     
@@ -73,10 +78,15 @@
 		$oddrow = !$oddrow;
 		
 		echo '<tr>';
-		echo '   <td'.$css_class.'>'.$row["id"].'</td>';
-		echo '   <td'.$css_class.'>'.$row["lat"].'</td>';
-		echo '   <td'.$css_class.'>'.$row["lgt"].'</td>';
-		echo '   <td'.$css_class.'>'.$row["aqi"].'</td>';
+		echo '   <td'.$css_class.'>'.$row["ID"].'</td>';
+		echo '   <td'.$css_class.'>'.$row["STATION"].'</td>';
+		echo '   <td'.$css_class.'>'.$row["CO"].'</td>';
+		echo '   <td'.$css_class.'>'.$row["PM2_5"].'</td>';
+		echo '   <td'.$css_class.'>'.$row["O3"].'</td>';
+		echo '   <td'.$css_class.'>'.$row["NH3"].'</td>';
+		echo '   <td'.$css_class.'>'.$row["HUMIDITY"].'</td>';
+		echo '   <td'.$css_class.'>'.$row["TEMP"].'</td>';
+		echo '   <td'.$css_class.'>'.$row["AQI"].'</td>';
 		echo '</tr>';
 	}
 ?>
