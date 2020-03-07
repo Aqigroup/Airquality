@@ -14,11 +14,11 @@
                 color: #000;
         }
         .table_titles {
-            color: #FFF;
-            background-color: #666;
+          color: #FFF;
+          background-color: #b035e8;
         }
         .table_cells_odd {
-            background-color: #CCC;
+            background-color: rgba(170, 0, 247, 0.39);
         }
         .table_cells_even {
             background-color: #FAFAFA;
@@ -28,7 +28,7 @@
 			margin-top: 2vh;
 			text-align: center;
         }
-        body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif; }
+        body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif; background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);}
     </style>
 </head>
 
