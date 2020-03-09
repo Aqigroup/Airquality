@@ -94,6 +94,7 @@
 ?>
     </table>
 </div>
-		    
+	<meta name="copyright" content="AqiGroup">
+	    
     </body>
 </html>
