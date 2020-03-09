@@ -97,6 +97,6 @@
 </body>		    
 	<div class="footer">
 	&copy:All Rights Reserved 	
-	<meta name="copyright" content="AqiGroup">
+	&copy:2020 aqigroup.herokuapp.com
         </div>	    
 </html>
