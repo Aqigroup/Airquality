@@ -6,6 +6,7 @@
 <html>
 <head>
 	<title>Air Quality Index</title>
+	<link rel="shortcut icon" type="image/jpg" href="/logo.jpg"/>
 	<style type="text/css">
 		* {
     box-sizing: border-box;}
