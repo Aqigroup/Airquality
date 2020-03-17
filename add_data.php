@@ -22,11 +22,36 @@ if ($r) { // If it ran OK.
 
  // Print a message:
  echo '<p>Thank you</p>';
-$to = 'gadadeyogesh007@gmail.com';
-$subject = 'Air Quality Index';
-$message = 'AQI is updated';
-$from = "From: AQIGROUP <aqi4@protonmail.com>";
-mail($to,$subject,$message,$from);
+$to = "gadadeyogesh007@gmail.com";
+$subject = "Air Quality Index";
+$message = "<html>
+<head>
+<title>HTML email</title>
+</head>
+<body>
+<p>This email contains HTML Tags!</p>
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+</tr>
+<tr>
+<td>Yogeshwar</td>
+<td>Gadade</td>
+</tr>
+</table>
+</body>
+</html>";
+$header = 'From: <gadadeyogesh007@gmail.com>' . "\r\n";
+$header .= 'Content-type:text/html;charset=UTF-8' . "\r\n";
+if(mail($to,$subject,$message,$header)){
+echo "Email send successfully";
+   }
+   else{
+   echo "Email Failed";
+    }
+
+
  } else { // If it did not run OK.
 
 // Public message:
