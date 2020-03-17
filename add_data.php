@@ -22,7 +22,11 @@ if ($r) { // If it ran OK.
 
  // Print a message:
  echo '<p>Thank you</p>';
-
+$to = 'gadadeyogesh007@gmail.com';
+$subject = 'Air Quality Index';
+$message = 'AQI is updated';
+$from = "From: AQIGROUP <aqi4@protonmail.com>";
+mail($to,$subject,$message,$from);
  } else { // If it did not run OK.
 
 // Public message:
